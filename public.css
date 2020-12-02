@@ -1,0 +1,273 @@
+/* 背景颜色 */
+.bg-color-yellow{
+    background-color: #F1CD4C;
+}
+.bg-color-orange{
+    background-color: #FF8804;
+}
+.bg-color-gray{
+    background-color: #999999;
+}
+.bg-color-black{
+    background-color: #666666;
+}
+/* 文字颜色 */
+.text-color-yellow{
+    color: #F1CD4C;
+}
+.text-color-orange{
+    color: #FF8804;
+}
+.text-color-gray{
+    color: #999999;
+}
+.text-color-black{
+    color: #666666;
+}
+/* 文字大小 */
+.text-size-12{
+    font-size: 12px;
+}
+.text-size-14{
+    font-size: 14px;
+}
+.text-size-16{
+    font-size: 16px;
+}
+.text-size-18{
+    font-size: 18px;
+}
+.text-size-20{
+    font-size: 20px;
+}
+.text-size-22{
+    font-size: 22px;
+}
+.text-size-24{
+    font-size: 24px;
+}
+/* 文字对齐 */
+/* 剧中对齐 */
+.text-center-12{
+    text-align: center;
+}
+/* 左对齐 */
+.text-left{
+    text-align: left;
+}
+/* 右对齐 */
+.text-right{
+    text-align: right;
+}
+/* 文字加粗 */
+.text-bold{
+    font-weight: bold;
+}
+/* 布局 */
+.flex {
+    display: flex;
+}
+/* 允许换行 */
+.flex-wrap{
+    flex-wrap: wrap;
+}
+/* 水平排列 */
+/* 左边排列 */
+.justify-start{
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+/* 右对齐 */
+.justify-end{
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+/* 剧中排列 */
+.justify-center{
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+/* 两端排列 */
+.justify-between{
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+/* 周围空间分布 */
+.justify-around{
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+/* 垂直排列 */
+    /* 顶部对齐 */
+.align-start{
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+/* 底部对齐 */
+.align-end{
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+/* 剧中对齐 */
+.align-center{
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+/* 边距 */
+/* 四周边距 */
+.margin-10{
+    margin: 10px;
+}
+.margin-20{
+    margin: 20px;
+}
+.margin-40{
+    margin: 40px;
+}
+/* 左边距 */
+.margin-left-10{
+    margin-left: 10px;
+}
+.margin-left-20{
+    margin-left: 20px;
+}
+.margin-left-40{
+    margin-left: 40px;
+}
+/* 右边距 */
+.margin-right-10{
+    margin-right: 10px;
+}
+.margin-right-20{
+    margin-right: 20px;
+}
+.margin-right-40{
+    margin-right: 40px;
+}
+/* 上边距 */
+.margin-top-10{
+    margin-top: 10px;
+}
+.margin-top-20{
+    margin-top: 20px;
+}
+.margin-top-40{
+    margin-top: 40px;
+}
+/* 下边距 */
+.margin-bottom-10{
+    margin-bottom: 10px;
+}
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+.margin-bottom-40{
+    margin-bottom: 40px;
+}
+/* 左右边距 */
+.margin-lr-10{
+    margin:0 10px;
+}
+.margin-lr-20{
+    margin:0 20px;
+}
+.margin-lr-40{
+    margin:0 40px;
+}
+/* 上下边距 */
+.margin-bt-10{
+    margin: 10px 0;
+}
+.margin-bt-20{
+    margin:20px 0;
+}
+.margin-bt-40{
+    margin:40px 0;
+}
+
+/* 填充 */
+/* 四周填充 */
+.padding-10{
+    padding: 10px;
+}
+.padding-20{
+    padding: 20px;
+}
+.padding-40{
+    padding: 40px;
+}
+/* 左填充 */
+.padding-left-10{
+    padding-left: 10px;
+}
+.padding-left-20{
+    padding-left: 20px;
+}
+.padding-left-40{
+    padding-left: 40px;
+}
+/* 右填充 */
+.padding-right-10{
+    padding-right: 10px;
+}
+.padding-right-20{
+    padding-right: 20px;
+}
+.padding-right-40{
+    padding-right: 40px;
+}
+/* 上填充 */
+.padding-top-10{
+    padding-top: 10px;
+}
+.padding-top-20{
+    padding-top: 20px;
+}
+.padding-top-40{
+    padding-top: 40px;
+}
+/* 下填充 */
+.padding-bottom-10{
+    padding-bottom: 10px;
+}
+.padding-bottom-20{
+    padding-bottom: 20px;
+}
+.padding-bottom-40{
+    padding-bottom: 40px;
+}
+/* 左右填充 */
+.padding-lr-10{
+    padding:0 10px;
+}
+.padding-lr-20{
+    padding:0 20px;
+}
+.padding-lr-40{
+    padding:0 40px;
+}
+/* 上下填充 */
+.padding-bt-10{
+    padding: 10px 0;
+}
+.padding-bt-20{
+    padding:20px 0;
+}
+.padding-bt-40{
+    padding:40px 0;
+}
