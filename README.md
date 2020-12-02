@@ -73,7 +73,7 @@
 
 `margin-{边距的方向}-{边距大小} `
 
-**列如：**margin-right-10 ; //右边距10px
+**列如：**  margin-right-10 ; //右边距10px
 
 > 目前只有 10px、20px、40px
 
