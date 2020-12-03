@@ -14,7 +14,7 @@
 | text-color-yellow | \#F1CD4C | 黄色 |
 | text-color-orange | \#FF8804 | 橘色 |
 | text-color-gray   | \#999999 | 灰色 |
-| bg-color-black    | \#666666 | 黑色 |
+| text-color-black  | \#666666 | 黑色 |
 
 ### 文字大小
 
@@ -30,11 +30,11 @@
 
 ### 文字对齐
 
-| 类名        | 值     |
-| ----------- | ------ |
-| text-center | center |
-| text-left   | left   |
-| text-right  | right  |
+| 类名        | 值      | 备注         |
+| ----------- | ------ | ------------ |
+| text-center | center | 剧中对齐     |
+| text-left   | left   | 左对齐       |
+| text-right  | right  | 右对齐       |
 
 ### 文字加粗
 
