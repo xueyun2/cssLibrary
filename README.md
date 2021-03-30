@@ -50,6 +50,7 @@
 | --------- | ---------------- | ---------------------- |
 | flex      | display: flex;   | 水平排列（默认不换行） |
 | flex-wrap | flex-wrap: wrap; | 允许换行               |
+| flex-column | flex-wrap: wrap; | 垂直排列               |
 
 #### 水平排列
 
