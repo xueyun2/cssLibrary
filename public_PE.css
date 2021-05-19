@@ -1,9 +1,8 @@
  body,html{
      padding: 0;
      margin: 0;
-     color: #373737;
+     color: #303133;
      font-size: 0.8rem;
-     background: #F5F5F5;
  }
  ul,li,dl,dd{
      list-style: none;
@@ -37,53 +36,72 @@
     background-clip:padding-box;
     min-height:28px;
 }
- /* 唯美网配色 */
-.bg-main{
-     background-color: #E8199E;
+/* 输入框样式 */
+.input-text{
+    width: 100%;
+    height: 2.2rem;
+    border: 1px solid #e4e7ed;
+    border-radius: 4px;
+    line-height: 2.2rem;
+    background: #fff;
+    outline:none;
+    padding: .5rem;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    outline:none;
 }
-.bg-main-light{
-     background-color: #FFD4EF;
+.input-text:focus{
+    border-color:#2979ff;
+
 }
-.bg-gray{
-    background-color: #F5F5F5;
-}
-.text-main{
-    color: #E8199E;
-}
-.text-white{
+/* 主要按钮 */
+.botton{
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    width: 100%;
+    background: #2979ff;
     color: #fff;
+    border-radius: .2rem;
+    padding: .55rem .6rem;
+    display: block;
 }
-.border-main{
-    border:1px solid  #E8199E;
-}
-.border-gray{
-    border:1px solid #BCBCBC;
+.botton-
+/* 边框颜色 */
+.border-color{
+    border-color: #e4e7ed;
 }
  /* 背景颜色 */
-.bg-color-yellow{
-    background-color: #F1CD4C;
+.bg-color-Primary{
+    background-color: #2979ff;
 }
-.bg-color-orange{
-    background-color: #FF8804;
+.bg-color-warning{
+    background-color: #ff9900;
 }
-.bg-color-gray{
-    background-color: #999999;
+.bg-color-success{
+    background-color: #19be6b;
 }
-.bg-color-black{
-    background-color: #666666;
+.bg-color-error{
+    background-color: #fa3534;
+}
+.bg-color{
+    background-color: #f3f4f6; 
 }
 /* 文字颜色 */
-.text-color-yellow{
-    color: #F1CD4C;
+.text-color-white{
+    color: #fff;
 }
-.text-color-orange{
-    color: #FF8804;
+.text-main-color{
+    color: #303133;
 }
-.text-color-gray{
-    color: #999999;
+.text-content-color{
+    color:  #606266;
 }
-.text-color-black{
-    color: #666666;
+.text-tips-color{
+    color: #909399;
+}
+.text-light-color{
+    color: #c0c4cc;
 }
 /* 文字大小 */
 .text-size-12{
