@@ -3,6 +3,9 @@
      margin: 0;
      color: #303133;
      font-size: 0.8rem;
+     width: 100%;
+     height: 100%;
+     font-family: -apple-system,Helvetica,sans-serif;
  }
  ul,li,dl,dd{
      list-style: none;
@@ -20,6 +23,9 @@
      text-decoration: none;
      color: #666666;
  }
+ i{
+     font-style: normal;
+ }
  img{object-fit: cover;}
  /* 改变滚动条的宽度 */
 ::-webkit-scrollbar {
@@ -36,8 +42,17 @@
     background-clip:padding-box;
     min-height:28px;
 }
+/* iphoneX适配底部 */
+@supports (bottom: env(safe-area-inset-bottom)){
+    body,
+    .iphoneX{
+        padding-bottom: constant(safe-area-inset-bottom);
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+}
+
 /* 输入框样式 */
-.input-text{
+input[type="text"],input[type="number"]{
     width: 100%;
     height: 2.2rem;
     border: 1px solid #e4e7ed;
@@ -50,12 +65,110 @@
     transition: all 0.5s;
     outline:none;
 }
-.input-text:focus{
+input[type="text"]:focus,input[type="number"]:focus{
     border-color:#2979ff;
+}
+/* 步进器 */
+.Stepper input{
+    width: 2rem;
+    height: 1.4rem;
+    border: none;
+    background: #F3F4F6;
+    border-radius: .2rem;
+    text-align: center;
+    color: #303133;
+    -webkit-appearance: none;
+    padding: 0;
 
 }
+.Stepper .but{
+    width: 1.4rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    color: #C0C4CC;
+    border: none;
+    background: #F3F4F6;
+    border-radius: .2rem;
+    text-align: center;
+    font-size: .6rem;
+    font-weight: normal;
+
+}
+/* 复选框 */
+.check input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    outline: none;
+    vertical-align: middle;
+    border: 1px solid #C0C4CC;
+    box-sizing: border-box;
+    padding: 0;
+    transition: all 0.5s;
+
+}
+.check input[type="checkbox"]:checked {
+    border: 1px solid #2979ff;
+    background:#2979ff ;
+}
+.check input[type="checkbox"]:checked::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: .2rem;
+    height: .5rem;
+    left: 24%;
+    top: 42%;
+    border-right: .1rem solid #fff;
+    border-bottom: .1rem solid #fff;
+    transform: rotate(45deg) translate(-50%,-50%);
+    background: none;
+    transition: all 0.5s;
+}
+/* 单选按钮 */
+.radio input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: .9rem;
+    height: .9rem;
+    cursor: pointer;
+    outline: none;
+    vertical-align: middle;
+    border: 1px solid #C0C4CC;
+    box-sizing: border-box;
+    padding: 0;
+    transition: all 0.5s;
+    border-radius: 1000rem;
+    margin: 0;
+
+}
+.radio input[type="radio"]:checked {
+    border: 1px solid #2979ff;
+    background:#fff ;
+    border-radius: 1000rem;
+    margin: 0;
+}
+.radio input[type="radio"]:checked::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: .5rem;
+    height: .5rem;
+    left: 50%;
+    top: 50%;
+    border-radius: 1000rem;
+    background: #2979ff;
+    transform:  translate(-50%,-50%);
+    transition: all 0.5s;
+}
 /* 主要按钮 */
-.botton{
+.button{
+    -webkit-appearance: none;
+    appearance: none;
     border: none;
     box-shadow: none;
     cursor: pointer;
@@ -63,10 +176,35 @@
     background: #2979ff;
     color: #fff;
     border-radius: .2rem;
-    padding: .55rem .6rem;
+    padding: .6rem .6rem;
     display: block;
+    font-size: .8rem;
+    position: relative;
+    overflow: hidden;
 }
-.botton-
+
+.button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle, #103d8b 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10, 10);
+    opacity: 0;
+    transition: transform .3s, opacity .5s;
+}
+ 
+.button:active:after {
+    transform: scale(0, 0);
+    opacity: .3;
+    transition: 0s;
+}
 /* 边框颜色 */
 .border-color{
     border-color: #e4e7ed;
@@ -87,7 +225,22 @@
 .bg-color{
     background-color: #f3f4f6; 
 }
+.bg-white{
+    background: #fff;
+}
 /* 文字颜色 */
+.text-color-success{
+    color: #19be6b;
+}
+.text-color-Primary{
+    color: #2979ff;;
+}
+.text-color-warning{
+    color: #ff9900;
+}
+.text-color-error{
+    color: #fa3534;
+}
 .text-color-white{
     color: #fff;
 }
